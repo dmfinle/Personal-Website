@@ -2,10 +2,15 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import logo from "logo.svg";
+import logo from "images/logo.svg";
+import { useContext } from "react";
+import { ThemeContext } from "context/ThemeContext";
+import "./NavigationBar.scss";
+
 function NavigationBar() {
+  const [theme] = useContext(ThemeContext);
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
+    <Navbar bg={theme} variant={theme} expand="lg">
       <Container>
         <Navbar.Brand href="#test">
           {" "}

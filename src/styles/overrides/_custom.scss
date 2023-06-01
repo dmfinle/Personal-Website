@@ -1,0 +1,8 @@
+@use "styles/abstracts/colors" as *;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+);
+
+@import "bootstrap/scss/bootstrap.scss";
