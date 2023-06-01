@@ -10,7 +10,13 @@ import "./NavigationBar.scss";
 function NavigationBar() {
   const [theme] = useContext(ThemeContext);
   return (
-    <Navbar bg={theme} variant={theme} expand="lg">
+    <Navbar
+      className={theme}
+      sticky="top"
+      bg={theme}
+      variant={theme}
+      expand="lg"
+    >
       <Container>
         <Navbar.Brand href="#test">
           {" "}

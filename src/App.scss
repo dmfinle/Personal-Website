@@ -1,1 +1,8 @@
 @import "styles/base/reset";
+
+.dark-toggle {
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  z-index: 1;
+}
