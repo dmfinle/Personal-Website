@@ -2,47 +2,41 @@ import Home from "components/Home/Home";
 import Resume from "components/Resume/Resume";
 import NavigationBar from "components/Navigation/NavigationBar";
 import "./App.scss";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { ThemeContext } from "context/ThemeContext";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 function App() {
   const [theme, setTheme] = useContext(ThemeContext);
-  const [isDarkMode, setDarkMode] = useState(true);
+  const [isDarkMode, setDarkMode] = useState(theme === "light" ? true : false);
+  const mql = window.matchMedia("(prefers-color-scheme: dark)");
 
   const toggleDarkMode = (checked) => {
     setDarkMode(checked);
+    setTheme(theme === "light" ? "dark" : "light");
   };
 
-  useEffect(() => {
-    console.log(window.localStorage.getItem("theme"));
-    // window.localStorage.setItem("theme", theme);
-  }, []);
+  const setStorageTheme = () => {
+    window.localStorage.setItem("theme", theme === "light" ? "dark" : "light");
+  };
 
-  // useEffect(() => {
-  //   const localTheme = window.localStorage.getItem("theme");
-  //   console.log(localTheme);
-  //   if (localTheme) {
-  //     console.log("-----");
-  //     console.log(localTheme);
-  //     setTheme(localTheme);
-  //   } else {
-  //     setTheme("light");
-  //   }
-  // }, []);
+  mql.addEventListener("change", ({ matches }) => {
+    if (!window.localStorage.getItem("theme")) {
+      toggleDarkMode(!matches);
+    }
+  });
 
   return (
     <div className={theme}>
       <NavigationBar></NavigationBar>
-
       <DarkModeSwitch
-        className="dark-toggle"
+        className="dark-toggle "
         checked={isDarkMode}
-        size={50}
         sunColor="#FDB813"
-        moonColor="#F6F1D5"
+        moonColor="#E3DEE7"
+        size={50}
         onChange={(checked) => {
           toggleDarkMode(checked);
-          setTheme(theme === "light" ? "dark" : "light");
+          setStorageTheme();
         }}
       ></DarkModeSwitch>
       <Home></Home>
