@@ -1,3 +1,5 @@
+@use "styles/abstracts/colors" as *;
+
 h2 {
   overflow: hidden;
   text-align: center;
@@ -5,13 +7,22 @@ h2 {
 
 h2:before,
 h2:after {
-  background-color: #000;
   content: "";
   display: inline-block;
   height: 1px;
   position: relative;
   vertical-align: middle;
   width: 15%;
+}
+
+h2.light:before,
+h2.light:after {
+  background-color: $dark;
+}
+
+h2.dark:before,
+h2.dark:after {
+  background-color: $light;
 }
 
 h2:before {
