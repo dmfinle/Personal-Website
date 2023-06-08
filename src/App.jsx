@@ -1,10 +1,17 @@
-import Home from "components/Home/Home";
-import Resume from "components/Resume/Resume";
-import NavigationBar from "components/Navigation/NavigationBar";
+//Styles
 import "./App.scss";
+
+//Components
+import NavigationBar from "components/Navigation/NavigationBar";
+import Home from "components/Home/Home";
+
+//React
 import { useContext, useState } from "react";
 import { ThemeContext } from "context/ThemeContext";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
+import { Route, Routes } from "react-router-dom";
+import Resume from "components/Resume/Resume";
+
 function App() {
   const [theme, setTheme] = useContext(ThemeContext);
   const [isDarkMode, setDarkMode] = useState(theme === "light" ? true : false);
@@ -39,8 +46,10 @@ function App() {
           setStorageTheme();
         }}
       ></DarkModeSwitch>
-      <Home></Home>
-      <Resume></Resume>
+      <Routes>
+        <Route path="/" element={<Home></Home>} />
+        <Route path="/resume" element={<Resume></Resume>} />
+      </Routes>
     </div>
   );
 }

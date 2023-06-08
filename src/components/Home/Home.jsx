@@ -1,22 +1,24 @@
-import Container from "react-bootstrap/Container";
+//Styles
+import "./Home.scss";
+
+//React
 import { useContext } from "react";
 import { ThemeContext } from "context/ThemeContext";
-import "./Home.scss";
+
+//Components
+import Introduction from "components/Introduction/Introduction";
+import Jobs from "components/Jobs/Jobs";
+import Links from "components/Links/Links";
 
 function Home() {
   const [theme] = useContext(ThemeContext);
   return (
-    <div className={theme}>
-      <Container className={`${theme} bgimg`} fluid>
-        <Container className="h-100 d-flex justify-content-center align-items-center text-white ">
-          <span className="text-center">
-            <h1>Hey, </h1>
-            <br></br>
-            <h1>My name is Daniel Finley</h1>
-          </span>
-        </Container>
-      </Container>
-    </div>
+    <>
+      <Introduction></Introduction>
+      <Jobs></Jobs>
+      {/* <Subscribe></Subscribe> */}
+      <Links></Links>
+    </>
   );
 }
 

@@ -18,9 +18,10 @@ function NavigationBar() {
       expand="lg"
     >
       <Container>
-        <Navbar.Brand href="#test">
+        <Navbar.Brand href="/">
           {" "}
           <img
+            loading="lazy"
             src={logo}
             width="30"
             height="30"
@@ -29,14 +30,16 @@ function NavigationBar() {
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse>
           <Nav className="me-auto">
-            <Nav.Link href="#test">About Me</Nav.Link>
-            <Nav.Link href="#test">Resume</Nav.Link>
-            <NavDropdown title="Services" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#test">Tutoring</NavDropdown.Item>
-              <NavDropdown.Item href="#test">Tutoring Agency</NavDropdown.Item>
-              <NavDropdown.Item href="#test">Products</NavDropdown.Item>
+            <Nav.Link href="/">About Me</Nav.Link>
+            <Nav.Link href="/resume">Resume</Nav.Link>
+            <NavDropdown menuVariant={theme} title="Services">
+              <NavDropdown.Item href="/tutoring">Tutoring</NavDropdown.Item>
+              <NavDropdown.Item href="/agency">
+                Tutoring Agency
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/products">Products</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

@@ -1,0 +1,27 @@
+@use "styles/abstracts/colors" as *;
+
+a.light.title,
+a.dark.title,
+a:link.light.title,
+a:link.dark.title,
+a:visited.light.title,
+a:visited.dark.title {
+  text-decoration: none;
+  background-color: none;
+}
+
+a.light.title {
+  color: rgb(42, 186, 243);
+}
+
+a.dark.title {
+  color: rgb(105, 249, 105);
+}
+
+a:hover {
+  text-shadow: 0 0 5px;
+}
+
+.smooth {
+  transition: all 0.2s ease-in-out;
+}

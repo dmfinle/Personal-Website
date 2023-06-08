@@ -1,0 +1,16 @@
+@use "styles/abstracts/colors" as *;
+
+.dark.subscribe {
+  background-color: white;
+  color: $dark;
+}
+
+.light.subscribe {
+  background-color: $dark;
+  color: $light;
+}
+
+.black-box {
+  height: 25rem;
+  width: 25rem;
+}

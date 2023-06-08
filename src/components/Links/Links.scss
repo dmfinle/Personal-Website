@@ -1,0 +1,46 @@
+@use "styles/abstracts/colors" as *;
+.background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25rem;
+  background-attachment: fixed;
+  transition: all 0.9s ease;
+  background-image: url("/images/tech.png");
+}
+
+.dark {
+  background-color: $secondary;
+  color: $light;
+
+  .background {
+    opacity: 0.8;
+  }
+}
+
+.logo.light {
+  color: $light;
+  background-color: transparent;
+}
+
+.logo.dark {
+  color: $dark;
+  background-color: transparent;
+}
+
+h2.dark.alternate,
+h2.dark.alternate:before,
+h2.dark.alternate:after {
+  color: $dark;
+  background-color: $dark;
+}
+
+h2.light.alternate,
+h2.light.alternate:before,
+h2.light.alternate:after {
+  color: $light;
+  background-color: $light;
+}
+
+.icon-100 {
+  font-size: 100px;
+}
