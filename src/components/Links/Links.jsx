@@ -15,7 +15,7 @@ function Links() {
 
       <Row>
         <Col className="d-flex justify-content-end">
-          <a target="_blank" rel="norferrer" href="https://github.com/dmfinle">
+          <a target="_blank" rel="noreferrer" href="https://github.com/dmfinle">
             <i className={`bi bi-github mx-2 icon-100 logo ${theme}`}></i>
           </a>
         </Col>
