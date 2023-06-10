@@ -1,12 +1,18 @@
-import { useContext } from "react";
+//styles
 import "./Jobs.scss";
+import software from "images/software-engineer.jpg";
+import enginearu from "images/enginearu.jpg";
+import programming from "images/programming.jpg";
+import riggs from "images/riggs.jpg";
+
+//React
+import { useContext } from "react";
 import { ThemeContext } from "context/ThemeContext";
 import { Col, Container, Row } from "react-bootstrap";
-import niwc from "images/NIWC.png";
-import enginearu from "images/enginearu.png";
-import programming from "images/programming.jpg";
-import clemson from "images/clemson.jpg";
+
+//Components
 import JobElement from "components/JobElement/JobElement";
+
 function Jobs() {
   const [theme] = useContext(ThemeContext);
   return (
@@ -66,8 +72,8 @@ function Jobs() {
           link="https://www.enginearu.com"
         />
         <JobElement
-          title="Free Lance Tutor"
-          subhead="Programming Tutor"
+          title="Free Lance"
+          subhead="Developer"
           date="June 2021 - Present"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -80,7 +86,7 @@ function Jobs() {
           link="https://dayslice.com/danielfinley"
         />
         <JobElement
-          title="Naval Information Warfare Center (NIWC)"
+          title="Engineer"
           subhead="Software Engineer"
           date="March 2020 - Present"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -90,13 +96,12 @@ function Jobs() {
           reprehenderit in voluptate velit esse cillum dolore eu fugiat
           nulla pariatur. Excepteur sint occaecat cupidatat non proident,
           sunt in culpa qui officia deserunt mollit anim id est laborum."
-          image={niwc}
-          link="https://www.niwcatlantic.navy.mil/"
+          image={software}
         />
 
         <JobElement
           title="Clemson University"
-          subhead="B.S Electrical & Computer Engineer (Double Major)"
+          subhead="B.S Electrical & Computer Engineer "
           date="December 2019"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -105,30 +110,7 @@ function Jobs() {
           reprehenderit in voluptate velit esse cillum dolore eu fugiat
           nulla pariatur. Excepteur sint occaecat cupidatat non proident,
           sunt in culpa qui officia deserunt mollit anim id est laborum."
-          image={clemson}
-          link="https://www.niwcatlantic.navy.mil/"
-          caption={
-            <span>
-              Photo by{" "}
-              <a
-                className={theme}
-                target="_blank"
-                rel="noreferrer"
-                href="https://unsplash.com/@edoering?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-              >
-                Erin Doering{" "}
-              </a>
-              on{" "}
-              <a
-                className={theme}
-                target="_blank"
-                rel="noreferrer"
-                href="https://unsplash.com/photos/6i0CMpoGW7w?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-              >
-                Unsplash
-              </a>
-            </span>
-          }
+          image={riggs}
         />
       </Container>
     </div>

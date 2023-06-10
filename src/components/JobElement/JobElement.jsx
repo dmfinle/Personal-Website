@@ -18,8 +18,8 @@ function JobElement({
         <Row className="d-flex mx-2 justify-content-center mt-5 ">
           <Col
             className="align-top smooth mb-4"
-            xs={10}
-            sm={10}
+            xs={12}
+            sm={12}
             md={3}
             lg={3}
             xl={3}
@@ -38,14 +38,18 @@ function JobElement({
             xxl={8}
           >
             <h1>
-              <a
-                className={`${theme} title text-center`}
-                target="_blank"
-                rel="noreferrer"
-                href={link}
-              >
-                {title}
-              </a>
+              {link ? (
+                <a
+                  className={`${theme} title text-center`}
+                  target="_blank"
+                  rel="noreferrer"
+                  href={link}
+                >
+                  {title}
+                </a>
+              ) : (
+                title
+              )}
             </h1>
             <h1>{subhead}</h1>
             <p className="fst-italic">{date}</p>

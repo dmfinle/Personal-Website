@@ -1,18 +1,17 @@
 //Styles
+import Projects from "./Projects/Projects";
 import "./Resume.scss";
 
-//React
-import { Container, Row } from "react-bootstrap";
-// import { useContext } from "react";
-// import { ThemeContext } from "context/ThemeContext";
+//Components
+import Skills from "./Skills/Skills";
+import WorkExperience from "./WorkExperience/WorkExperience";
 
 function Resume() {
-  // const [theme] = useContext(ThemeContext);
   return (
     <div>
-      <Container fluid>
-        <Row>Hello</Row>
-      </Container>
+      <Skills></Skills>
+      <WorkExperience></WorkExperience>
+      <Projects></Projects>
     </div>
   );
 }

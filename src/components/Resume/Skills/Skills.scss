@@ -1,0 +1,31 @@
+@use "styles/abstracts/colors" as *;
+
+h1:before,
+h1:after {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 15%;
+}
+
+h1.light:before,
+h1.light:after {
+  background-color: $dark;
+}
+
+h1.dark:before,
+h1.dark:after {
+  background-color: $light;
+}
+
+h1:before {
+  right: 0.5em;
+  margin-left: -15%;
+}
+
+h1:after {
+  left: 0.5em;
+  margin-right: -15%;
+}

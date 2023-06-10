@@ -17,26 +17,14 @@
   }
 }
 
-.logo.light {
+.logo {
   color: $light;
   background-color: transparent;
 }
 
-.logo.dark {
-  color: $dark;
-  background-color: transparent;
-}
-
-h2.dark.alternate,
-h2.dark.alternate:before,
-h2.dark.alternate:after {
-  color: $dark;
-  background-color: $dark;
-}
-
-h2.light.alternate,
-h2.light.alternate:before,
-h2.light.alternate:after {
+h2.alternate,
+h2.alternate:before,
+h2.alternate:after {
   color: $light;
   background-color: $light;
 }

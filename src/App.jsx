@@ -4,6 +4,7 @@ import "./App.scss";
 //Components
 import NavigationBar from "components/Navigation/NavigationBar";
 import Home from "components/Home/Home";
+import Links from "components/Links/Links";
 
 //React
 import { useContext, useState } from "react";
@@ -50,6 +51,7 @@ function App() {
         <Route path="/" element={<Home></Home>} />
         <Route path="/resume" element={<Resume></Resume>} />
       </Routes>
+      <Links></Links>
     </div>
   );
 }
