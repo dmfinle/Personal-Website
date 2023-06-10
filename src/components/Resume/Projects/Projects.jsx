@@ -41,6 +41,7 @@ function Projects() {
         <Container className="smooth">
           <Ratio aspectRatio="16x9">
             <iframe
+              title="Magnetic Bearing"
               className="embed-responsive-item "
               src="https://express.adobe.com/video/bbynHGOO8nVPK/embed"
               width="960"

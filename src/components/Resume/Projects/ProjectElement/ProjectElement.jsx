@@ -1,10 +1,7 @@
-import { useContext } from "react";
 import "./ProjectElement.scss";
-import { ThemeContext } from "context/ThemeContext";
 import { Col, Container, Row } from "react-bootstrap";
 
 function ProjectElement({ subhead, description }) {
-  const [theme] = useContext(ThemeContext);
   return (
     <div>
       <Container fluid>
