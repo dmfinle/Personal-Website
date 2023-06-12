@@ -2,7 +2,7 @@
 import "./Tutoring.scss";
 
 //React
-import { Container, Row, Col, Ratio } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { useContext } from "react";
 import { ThemeContext } from "context/ThemeContext";
 
