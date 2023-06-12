@@ -73,7 +73,7 @@ function Jobs() {
         />
         <JobElement
           title="Free Lance"
-          subhead="Developer"
+          subhead="Developer & Tutor"
           date="June 2021 - Present"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -87,7 +87,7 @@ function Jobs() {
         />
         <JobElement
           title="Engineer"
-          subhead="Software Engineer"
+          subhead="Mid-Level Software Engineer"
           date="March 2020 - Present"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut

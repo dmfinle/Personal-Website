@@ -35,11 +35,10 @@ function NavigationBar() {
             <Nav.Link href="/">About Me</Nav.Link>
             <Nav.Link href="/resume">Resume</Nav.Link>
             <NavDropdown menuVariant={theme} title="Services">
-              <NavDropdown.Item href="/tutoring">Tutoring</NavDropdown.Item>
-              <NavDropdown.Item href="/agency">
+              <NavDropdown.Item href="/tutoring">
                 Tutoring Agency
               </NavDropdown.Item>
-              <NavDropdown.Item href="/products">Products</NavDropdown.Item>
+              {/* <NavDropdown.Item href="/products">Products</NavDropdown.Item> */}
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

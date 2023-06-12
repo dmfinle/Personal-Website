@@ -2,7 +2,11 @@ $blue-100: #00a6fb;
 $blue-200: #0582ca;
 $blue-300: #006494;
 $blue-400: #003554;
-$dark: #051923;
+$blue-500: #01293f;
+$blue-600: #092b3b;
+$blue-700: #051923;
+$dark: $blue-600;
+// $dark: $blue-500;
 $light: white;
 
 $primary: $light;

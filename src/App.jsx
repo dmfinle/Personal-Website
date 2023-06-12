@@ -10,8 +10,10 @@ import Links from "components/Links/Links";
 import { useContext, useState } from "react";
 import { ThemeContext } from "context/ThemeContext";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Resume from "components/Resume/Resume";
+import Tutoring from "components/Tutoring/Tutoring";
+import NotFound from "components/NotFound/NotFound";
 
 function App() {
   const [theme, setTheme] = useContext(ThemeContext);
@@ -50,6 +52,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>} />
         <Route path="/resume" element={<Resume></Resume>} />
+        <Route path="/tutoring" element={<Tutoring></Tutoring>} />
+        <Route path="/404" element={<NotFound></NotFound>}></Route>
+        <Route path="*" element={<Navigate to="/404"></Navigate>}></Route>
       </Routes>
       <Links></Links>
     </div>
