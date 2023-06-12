@@ -29,3 +29,8 @@ h1:after {
   left: 0.5em;
   margin-right: -15%;
 }
+
+span.badge:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}

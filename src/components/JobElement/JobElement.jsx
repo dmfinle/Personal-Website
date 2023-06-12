@@ -53,7 +53,7 @@ function JobElement({
             </h1>
             <h1>{subhead}</h1>
             <p className="fst-italic">{date}</p>
-            <p>{description}</p>
+            <p className="text-justify">{description}</p>
           </Col>
         </Row>
       </Container>
