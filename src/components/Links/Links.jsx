@@ -34,6 +34,9 @@ function Links() {
           </a>
         </Col>
       </Row>
+      <p className="d-flex h-25 justify-content-end align-items-end text-light">
+        Designed By Daniel Finley © 💻
+      </p>
     </Container>
   );
 }

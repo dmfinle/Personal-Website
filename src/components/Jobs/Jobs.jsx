@@ -4,11 +4,13 @@ import software from "images/software-engineer.jpg";
 import enginearu from "images/enginearu.jpg";
 import programming from "images/programming.jpg";
 import riggs from "images/riggs.jpg";
+import event from "images/job_event.jpg";
+import career from "images/careerfair.jpg";
 
 //React
 import { useContext } from "react";
 import { ThemeContext } from "context/ThemeContext";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row, Figure } from "react-bootstrap";
 
 //Components
 import JobElement from "components/JobElement/JobElement";
@@ -17,15 +19,15 @@ function Jobs() {
   const [theme] = useContext(ThemeContext);
   return (
     <div>
-      <Container className="mb-5">
+      <Container className="mb-5 smooth">
         <Row>
           <h1 className={`${theme} mt-5 overflow-hidden text-center`}>
             My Journey Thus Far
           </h1>
         </Row>
         <Row className="mb-3">
-          <Col className="pt-3 mx-5 text-center smooth">
-            <p className="fw-bold">
+          <Col className="pt-3 mx-5 text-center">
+            <p>
               Hello and welcome to my personal website! My name is Daniel
               Finley, and I'm a software engineer with a passion for technology
               and education. I am also proud to be a co-founder of an online
@@ -49,8 +51,39 @@ function Jobs() {
               provide personalized and interactive learning experiences to help
               students excel in their STEM studies.
               <br></br>
-              <br></br>I am thrilled to be on this journey, combining my love
-              for software engineering and education. Through my work, I aim to
+              <Row>
+                <Col xs={12} sm={12} md={6} lg={6} xl={6} xxl={6}>
+                  <Figure className="my-4 d-flex justify-content-center text-center">
+                    <span>
+                      <Figure.Image src={event} />
+                      <Figure.Caption
+                        className={`mt-1 fst-italic text-${
+                          theme === "light" ? "dark" : "light"
+                        }`}
+                      >
+                        STEM Tabling at Airshow with NIWC
+                      </Figure.Caption>
+                    </span>
+                  </Figure>
+                </Col>
+                <Col className="d-flex justify-content-center align-items-center">
+                  {" "}
+                  <Figure className="my-4  text-center">
+                    <span>
+                      <Figure.Image src={career} />
+                      <Figure.Caption
+                        className={`mt-1 fst-italic text-${
+                          theme === "light" ? "dark" : "light"
+                        }`}
+                      >
+                        Middle School Career Fair with NIWC
+                      </Figure.Caption>
+                    </span>
+                  </Figure>
+                </Col>
+              </Row>
+              I am thrilled to be on this journey, combining my love for
+              software engineering and education. Through my work, I aim to
               inspire and empower the next generation of STEM enthusiasts,
               equipping them with the tools and knowledge they need to thrive in
               the digital age.
