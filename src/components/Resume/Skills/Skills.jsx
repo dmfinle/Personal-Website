@@ -22,7 +22,7 @@ function Skills() {
           </h2>
         </Row>
         <Row>
-          <h2 className="d-flex justify-content-center">
+          <h2 className="d-flex justify-content-center text-center">
             <Col>
               <Badge
                 className="mx-2"
@@ -90,12 +90,12 @@ function Skills() {
           </h2>
         </Row>
         <Row className="mb-2">
-          <h2 className="d-flex justify-content-center">
+          <h2 className="d-flex justify-content-center text-center">
             Frameworks/Libraries
           </h2>
         </Row>
         <Row>
-          <h2 className="d-flex justify-content-center">
+          <h2 className="d-flex justify-content-center text-center">
             <Col>
               <Badge
                 className="m-2"
@@ -173,10 +173,12 @@ function Skills() {
           </h2>
         </Row>
         <Row className="mb-2">
-          <h2 className="d-flex justify-content-center">Databases</h2>
+          <h2 className="d-flex justify-content-center text-center">
+            Databases
+          </h2>
         </Row>
         <Row>
-          <h2 className="d-flex justify-content-center">
+          <h2 className="d-flex justify-content-center text-center">
             <Col>
               <Badge
                 className="m-2"
@@ -198,10 +200,10 @@ function Skills() {
           </h2>
         </Row>
         <Row className="mb-2">
-          <h2 className="d-flex justify-content-center">OS</h2>
+          <h2 className="d-flex justify-content-center text-center">OS</h2>
         </Row>
         <Row>
-          <h2 className="d-flex justify-content-center">
+          <h2 className="d-flex justify-content-center text-center">
             <Col>
               <Badge
                 className="m-2"
@@ -233,17 +235,17 @@ function Skills() {
                 bg={theme === "light" ? "dark" : "light"}
                 text={theme}
               >
-                Centos 7/8
+                Centos 8
               </Badge>
             </Col>
           </h2>
         </Row>
 
         <Row className="mb-2">
-          <h2 className="d-flex justify-content-center">Other</h2>
+          <h2 className="d-flex justify-content-center text-center">Other</h2>
         </Row>
         <Row>
-          <h2 className="d-flex justify-content-center">
+          <h2 className="d-flex justify-content-center text-center">
             <Col>
               <Badge
                 className="m-2"

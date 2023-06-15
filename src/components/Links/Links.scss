@@ -20,11 +20,13 @@
 .logo {
   color: $light;
   background-color: transparent;
+  margin-right: 0.8rem;
+  margin-left: 0.8rem;
 }
 
-h2.alternate,
-h2.alternate:before,
-h2.alternate:after {
+h1.alternate,
+h1.alternate:before,
+h1.alternate:after {
   color: $light;
   background-color: $light;
 }

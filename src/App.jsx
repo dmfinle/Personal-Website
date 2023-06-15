@@ -14,6 +14,8 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import Resume from "components/Resume/Resume";
 import Tutoring from "components/Tutoring/Tutoring";
 import NotFound from "components/NotFound/NotFound";
+import Blogs from "components/Blogs/Blogs";
+import Enginearu from "components/Blogs/Enginearu/Enginearu";
 
 function App() {
   const [theme, setTheme] = useContext(ThemeContext);
@@ -53,6 +55,9 @@ function App() {
         <Route path="/" element={<Home></Home>} />
         <Route path="/resume" element={<Resume></Resume>} />
         <Route path="/tutoring" element={<Tutoring></Tutoring>} />
+        <Route path="/blogs" element={<Blogs></Blogs>}>
+          <Route path="enginearu" element={<Enginearu></Enginearu>} />
+        </Route>
         <Route path="/404" element={<NotFound></NotFound>}></Route>
         <Route path="*" element={<Navigate to="/404"></Navigate>}></Route>
       </Routes>

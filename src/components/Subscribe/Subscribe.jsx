@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import "./Subscribe.scss";
 import { ThemeContext } from "context/ThemeContext";
-import { Image, Col, Container, Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 function Subscribe() {
   const [theme] = useContext(ThemeContext);
   return (

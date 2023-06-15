@@ -24,7 +24,21 @@ function Projects() {
             <ProjectElement
               subhead={"Personal Website"}
               description={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                <>
+                  <p>
+                    This current website was created using React, Javascript,
+                    and Sass. Each piece of the website was componentized with
+                    its own styling sheet. React Bootstrap was used as a way to
+                    get some out of the box tools to be used in each of these
+                    components.
+                  </p>
+                  <p>
+                    A CI/CD pipeline was created using github workflows to
+                    automate testing and deployment on each subsequent push.
+                    Dependabot has also been incorporated to ensure that the
+                    dependencies stay updated.
+                  </p>
+                </>
               }
             ></ProjectElement>
           </Col>
@@ -33,8 +47,23 @@ function Projects() {
           <ProjectElement
             subhead={"Tutoring Website"}
             description={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              <>
+                <p>
+                  Using the MERN Stack to design a fully functional tutoring
+                  website that users can tutor others virtually for programming
+                  related concepts. Implemented WebRTC Peer-to-Peer video
+                  streaming to allow users to communicate and share screen.
+                  Using Socket.io to allow for real time communication between
+                  users in chat along with indicator for typing. Configured
+                  website styles using CSS/SCSS. Working on implementing online
+                  compiler so that users can collaborate directly on site.
+                </p>
+                <p>
+                  <i>Website is not live but the repository is linked</i>
+                </p>
+              </>
             }
+            link={"https://github.com/dmfinle/tutorwebsite"}
           ></ProjectElement>
         </Row>
         <Row className="mb-5">
@@ -42,28 +71,19 @@ function Projects() {
             <ProjectElement
               subhead={"Magnetic Bearing"}
               description={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                <>
+                  <p>
+                    Designed circuitry and developed code using MATLAB Simulink
+                    to create a Bluetooth controlled magnetic bearing that could
+                    float frictionless along a metal plate and hold up to 1000g
+                    of weight.
+                  </p>
+                </>
               }
               link="https://express.adobe.com/video/bbynHGOO8nVPK"
             ></ProjectElement>
           </Col>
         </Row>
-
-        {/* <Container className="smooth text-center  w-75 mb-5">
-          <Ratio aspectRatio="16x9">
-            <iframe
-              loading="lazy"
-              title="Magnetic Bearing"
-              className="embed-responsive-item "
-              src="https://express.adobe.com/video/bbynHGOO8nVPK/embed"
-              width="960"
-              height="540"
-              frameborder="0"
-              allowfullscreen="allowfullscreen"
-            ></iframe>
-          </Ratio>
-          <figcaption>Magnetic Bearing Video</figcaption>
-        </Container> */}
       </Container>
     </div>
   );

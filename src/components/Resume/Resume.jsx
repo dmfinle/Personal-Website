@@ -1,4 +1,5 @@
 //Styles
+import ProfessionalSummary from "./ProfessionalSummary/ProfessionalSummary";
 import Projects from "./Projects/Projects";
 import "./Resume.scss";
 
@@ -9,6 +10,7 @@ import WorkExperience from "./WorkExperience/WorkExperience";
 function Resume() {
   return (
     <div>
+      <ProfessionalSummary></ProfessionalSummary>
       <Skills></Skills>
       <WorkExperience></WorkExperience>
       <Projects></Projects>

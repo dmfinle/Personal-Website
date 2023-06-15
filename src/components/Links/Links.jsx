@@ -8,24 +8,29 @@ function Links() {
   return (
     <Container fluid className={`${theme} smooth background bg-image `}>
       <Row>
-        <h2 className={`${theme} alternate mt-5 bg-transparent fw-bold`}>
+        <h1 className={` alternate mt-5 bg-transparent text-center fw-bold`}>
           Check Out My Links Below
-        </h2>
+        </h1>
       </Row>
 
       <Row>
-        <Col className="d-flex justify-content-end">
+        <Col className="d-flex justify-content-center logo-spacing">
           <a target="_blank" rel="noreferrer" href="https://github.com/dmfinle">
-            <i className={`bi bi-github mx-2 icon-100 logo ${theme}`}></i>
+            <i className={`bi bi-github icon-100 logo ${theme}`}></i>
           </a>
-        </Col>
-        <Col>
+          {/* </Col> */}
+          {/* <Col className="d-flex justify-content-center"> */}
           <a
             target="_blank"
             rel="noreferrer"
             href="https://www.linkedin.com/in/danielfin/"
           >
-            <i className={`bi bi-linkedin icon-100 logo ${theme}`}></i>
+            <i className={`bi bi-linkedin l icon-100 logo ${theme}`}></i>
+          </a>
+          {/* </Col> */}
+          {/* <Col> */}
+          <a href="mailto:daniel@enginearu.com">
+            <i className={`bi bi-envelope icon-100 logo  ${theme}`}></i>
           </a>
         </Col>
       </Row>

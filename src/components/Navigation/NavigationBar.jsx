@@ -34,12 +34,14 @@ function NavigationBar() {
           <Nav className="me-auto">
             <Nav.Link href="/">About Me</Nav.Link>
             <Nav.Link href="/resume">Resume</Nav.Link>
+            {/* <Nav.Link href="/tutoring">Tutoring Agency</Nav.Link> */}
             <NavDropdown menuVariant={theme} title="Services">
-              <NavDropdown.Item href="/tutoring">
-                Tutoring Agency
+              <NavDropdown.Item href="/tutoring">Tutoring</NavDropdown.Item>
+              <NavDropdown.Item href="/website">
+                Website Development
               </NavDropdown.Item>
-              {/* <NavDropdown.Item href="/products">Products</NavDropdown.Item> */}
             </NavDropdown>
+            <Nav.Link href="/blogs">Blogs</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

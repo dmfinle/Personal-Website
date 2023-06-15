@@ -16,8 +16,8 @@ function ProjectElement({ subhead, description, link }) {
       <Container>
         <Row className="d-flex mx-2 justify-content-start mt-5 ">
           <Col className=" smooth">
-            <h1>
-              {link ? (
+            {link ? (
+              <h1>
                 <a
                   className={`${theme} title text-center`}
                   target="_blank"
@@ -26,10 +26,12 @@ function ProjectElement({ subhead, description, link }) {
                 >
                   {subhead}
                 </a>
-              ) : (
-                subhead
-              )}
-            </h1>
+              </h1>
+            ) : subhead ? (
+              <h1>{subhead}</h1>
+            ) : (
+              <></>
+            )}
 
             <p>{description}</p>
           </Col>
