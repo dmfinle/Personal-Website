@@ -38,10 +38,10 @@ function NavigationBar() {
         <Navbar.Collapse>
           <Nav className="me-auto">
             <Nav.Link href="/">About Me</Nav.Link>
-            <Nav.Link href="/resume">Resume</Nav.Link>
+            <Nav.Link href="/#/resume">Resume</Nav.Link>
             <NavDropdown menuVariant={theme} title="Services">
-              <NavDropdown.Item href="/tutoring">Tutoring</NavDropdown.Item>
-              <NavDropdown.Item href="/websites">
+              <NavDropdown.Item href="/#/tutoring">Tutoring</NavDropdown.Item>
+              <NavDropdown.Item href="/#/websites">
                 Website Development
               </NavDropdown.Item>
             </NavDropdown>

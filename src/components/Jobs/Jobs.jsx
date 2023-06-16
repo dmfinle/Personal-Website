@@ -149,7 +149,7 @@ function Jobs() {
                 questions you may have.
               </p>
               <p>
-                <a className={theme} href="/tutoring">
+                <a className={theme} href="/#/tutoring">
                   Click here to learn more!
                 </a>
               </p>
