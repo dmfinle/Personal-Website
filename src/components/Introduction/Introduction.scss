@@ -4,28 +4,10 @@
   background-size: cover;
   height: 100vh;
   // background-attachment: fixed;
+  // position: fixed;
   background-image: url("/images/lightIntro.jpg");
   background-position: 50% 40%;
   transition: all 0.9s ease;
-}
-
-.masthead {
-  overflow: hidden; // added for pseudo-element
-  position: relative; // added for pseudo-element
-
-  // Fixed-position background image
-  &::before {
-    content: " ";
-    position: fixed; // instead of background-attachment
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: url("/images/lightIntro.jpg") no-repeat center center;
-    background-size: cover;
-    will-change: transform; // creates a new paint layer
-    z-index: -1; //ensures image is behind everything else
-  }
 }
 
 // .light.bgimg {
