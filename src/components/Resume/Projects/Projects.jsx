@@ -4,10 +4,10 @@ import "./Projects.scss";
 //React
 import { Container, Row, Col } from "react-bootstrap";
 import { useContext } from "react";
-import { ThemeContext } from "context/ThemeContext";
 
 //Components
 import ProjectElement from "./ProjectElement/ProjectElement";
+import { ThemeContext } from "context/ThemeContext";
 
 function Projects() {
   const [theme] = useContext(ThemeContext);

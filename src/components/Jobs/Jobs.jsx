@@ -8,50 +8,67 @@ import event from "images/job_event.jpg";
 import career from "images/careerfair.jpg";
 
 //React
-import { useContext } from "react";
-import { ThemeContext } from "context/ThemeContext";
-import { Col, Container, Row, Figure } from "react-bootstrap";
+import { useContext, useRef } from "react";
+import { Col, Container, Row, Figure, Fade } from "react-bootstrap";
 
 //Components
 import JobElement from "components/JobElement/JobElement";
+import { ThemeContext } from "context/ThemeContext";
+import useIsInViewport from "utilities/useInViewPort";
 
 function Jobs() {
   const [theme] = useContext(ThemeContext);
+  const introRef = useRef(null);
+  const introText = useRef(null);
+  const imagesRef = useRef(null);
+
+  const introInView = useIsInViewport(introRef);
+  const introTextInView = useIsInViewport(introText);
+  const introImages = useIsInViewport(imagesRef);
+
   return (
     <div>
       <Container className="mb-5 smooth">
-        <Row>
-          <h1 className={`${theme} mt-5 overflow-hidden text-center`}>
-            My Journey Thus Far
-          </h1>
-        </Row>
-        <Row className="mb-3">
+        <Fade in={introInView} timeout={100}>
+          <Row ref={introRef}>
+            <h1 className={`${theme} mt-5 overflow-hidden text-center`}>
+              My Journey Thus Far
+            </h1>
+          </Row>
+        </Fade>
+
+        <Row ref={introText} className="mb-3">
           <Col className="pt-3 mx-5 text-center">
-            <p>
-              Hello and welcome to my personal website! My name is Daniel
-              Finley, and I'm a software engineer with a passion for technology
-              and education. I am also proud to be a co-founder of an online
-              STEM tutoring agency.
-              <br></br>
-              <br></br>
-              As a software engineer, I have had the opportunity to work on a
-              variety of exciting projects, honing my skills in designing and
-              developing user-friendly software solutions. I find great
-              satisfaction in leveraging technology to solve problems and
-              creating innovative solutions that enhance the user experience.
-              <br></br>
-              <br></br>
-              In addition to my technical pursuits, I am deeply passionate about
-              education, particularly in the fields of science, technology,
-              engineering, and math (STEM). My goal is to encourage
-              African-American individuals to pursue STEM related fields and
-              know it is attainable. This led me to co-found an online STEM
-              tutoring agency, where we strive to make quality education
-              accessible to students around the world. Through our platform, we
-              provide personalized and interactive learning experiences to help
-              students excel in their STEM studies.
-              <br></br>
-              <Row>
+            <Fade in={introTextInView} timeout={100}>
+              <p>
+                Hello and welcome to my personal website! My name is Daniel
+                Finley, and I'm a software engineer with a passion for
+                technology and education. I am also proud to be a co-founder of
+                an online STEM tutoring agency.
+                <br></br>
+                <br></br>
+                As a software engineer, I have had the opportunity to work on a
+                variety of exciting projects, honing my skills in designing and
+                developing user-friendly software solutions. I find great
+                satisfaction in leveraging technology to solve problems and
+                creating innovative solutions that enhance the user experience.
+                <br></br>
+                <br></br>
+                In addition to my technical pursuits, I am deeply passionate
+                about education, particularly in the fields of science,
+                technology, engineering, and math (STEM). My goal is to
+                encourage African-American individuals to pursue STEM related
+                fields and know it is attainable. This led me to co-found an
+                online STEM tutoring agency, where we strive to make quality
+                education accessible to students around the world. Through our
+                platform, we provide personalized and interactive learning
+                experiences to help students excel in their STEM studies.
+                <br></br>
+              </p>
+            </Fade>
+
+            <Fade in={introImages} timeout={100}>
+              <Row ref={imagesRef}>
                 <Col xs={12} sm={12} md={6} lg={6} xl={6} xxl={6}>
                   <Figure className="my-4 d-flex justify-content-center text-center">
                     <span>
@@ -82,6 +99,8 @@ function Jobs() {
                   </Figure>
                 </Col>
               </Row>
+            </Fade>
+            <p>
               I am thrilled to be on this journey, combining my love for
               software engineering and education. Through my work, I aim to
               inspire and empower the next generation of STEM enthusiasts,
@@ -145,28 +164,30 @@ function Jobs() {
           date="June 2021 - Present"
           description={
             <>
-              <p>
-                As the pandemic shifted work remotely, I discovered online
-                tutoring. I had always had a passion for tutoring, as this is
-                something I did in college. I find great satisfaction in helping
-                students find their eureka moment. I began tutoring online on
-                Wyzant doing a wide variety of topics ranging from calculus,
-                circuits, and programming. I found that tutoring in programming
-                is what I loved and it seemed those were the students who needed
-                me the most.
-              </p>
-              <p>
-                Since the start, I have over 1000 hours of tutoring and have
-                been able to help many families, some of which have shared
-                amazing success stories with me. Being a blessing to others is
-                something my mom has always instilled in me and it is something
-                I try to live by.
-              </p>
-              <p>
-                In addition to freelance tutoring, I have also done some
-                freelance website development. I plan to continue to grow in
-                this area and add to my portfolio of sites. Some sites that I
-                have designed myself:
+              <span>
+                <p>
+                  As the pandemic shifted work remotely, I discovered online
+                  tutoring. I had always had a passion for tutoring, as this is
+                  something I did in college. I find great satisfaction in
+                  helping students find their eureka moment. I began tutoring
+                  online on Wyzant doing a wide variety of topics ranging from
+                  calculus, circuits, and programming. I found that tutoring in
+                  programming is what I loved and it seemed those were the
+                  students who needed me the most.
+                </p>
+                <p>
+                  Since the start, I have over 1000 hours of tutoring and have
+                  been able to help many families, some of which have shared
+                  amazing success stories with me. Being a blessing to others is
+                  something my mom has always instilled in me and it is
+                  something I try to live by.
+                </p>
+                <p>
+                  In addition to freelance tutoring, I have also done some
+                  freelance website development. I plan to continue to grow in
+                  this area and add to my portfolio of sites. Some sites that I
+                  have designed myself:
+                </p>
                 <ul>
                   <li>This website, my personal portfolio</li>
                   <li>
@@ -182,11 +203,11 @@ function Jobs() {
                     African-Americans to enlist in the U.S. Marine Corps
                   </li>
                 </ul>
-              </p>
-              <p>
-                Feel free to click my link above if you are looking to get help
-                in a specific subject or looking to have a quick chat.
-              </p>
+                <p>
+                  Feel free to click my link above if you are looking to get
+                  help in a specific subject or looking to have a quick chat.
+                </p>
+              </span>
             </>
           }
           image={programming}
@@ -250,8 +271,8 @@ function Jobs() {
                 particpate in all Clemson had to offer.
               </p>
 
-              <p>
-                I was apart of various organizations such as:
+              <span>
+                <p>I was apart of various organizations such as:</p>
                 <ul>
                   <li>
                     <b>PEER & WISE</b>, a program dedicated to increasing
@@ -281,12 +302,12 @@ function Jobs() {
                     time I served as the Director of Education for our chapter.
                   </li>
                 </ul>
-              </p>
-              <p>
-                Ultimately, Clemson awarded me the chance to experiment and find
-                out what I truly had a passion for while affording me the
-                opportunity to have fun along the way.
-              </p>
+                <p>
+                  Ultimately, Clemson awarded me the chance to experiment and
+                  find out what I truly had a passion for while affording me the
+                  opportunity to have fun along the way.
+                </p>
+              </span>
             </>
           }
           image={riggs}

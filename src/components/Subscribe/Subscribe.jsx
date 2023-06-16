@@ -1,7 +1,13 @@
-import { useContext } from "react";
+//styles
 import "./Subscribe.scss";
-import { ThemeContext } from "context/ThemeContext";
+
+//React
+import { useContext } from "react";
 import { Container, Row } from "react-bootstrap";
+
+//Components
+import { ThemeContext } from "context/ThemeContext";
+
 function Subscribe() {
   const [theme] = useContext(ThemeContext);
   return (

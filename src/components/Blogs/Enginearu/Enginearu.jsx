@@ -1,9 +1,5 @@
 //styles
-// import { Container } from "react-bootstrap";
 import "./Enginearu.scss";
-
-//React
-// import { Route, Routes } from "react-router-dom";
 
 function Enginearu() {
   return (

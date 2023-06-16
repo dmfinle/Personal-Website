@@ -1,11 +1,13 @@
 //styles
 import "./NotFound.scss";
-import Container from "react-bootstrap/Container";
 
 //React
 import { useContext } from "react";
-import { ThemeContext } from "context/ThemeContext";
+import Container from "react-bootstrap/Container";
 import { Button } from "react-bootstrap";
+
+//Components
+import { ThemeContext } from "context/ThemeContext";
 
 function NotFound() {
   const [theme] = useContext(ThemeContext);

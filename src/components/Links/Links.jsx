@@ -1,7 +1,12 @@
-import { useContext } from "react";
+//styles
 import "./Links.scss";
-import { ThemeContext } from "context/ThemeContext";
+
+//React
+import { useContext } from "react";
 import { Col, Container, Row } from "react-bootstrap";
+
+//Components
+import { ThemeContext } from "context/ThemeContext";
 
 function Links() {
   const [theme] = useContext(ThemeContext);

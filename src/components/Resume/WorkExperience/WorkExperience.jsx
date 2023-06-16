@@ -6,10 +6,10 @@ import wyzant from "images/wyzant.jpg";
 //React
 import { Container, Row, Col } from "react-bootstrap";
 import { useContext } from "react";
-import { ThemeContext } from "context/ThemeContext";
 
 //Components
 import JobElement from "components/JobElement/JobElement";
+import { ThemeContext } from "context/ThemeContext";
 
 function WorkExperience() {
   const [theme] = useContext(ThemeContext);

@@ -1,11 +1,11 @@
 //Styles
-import ProfessionalSummary from "./ProfessionalSummary/ProfessionalSummary";
-import Projects from "./Projects/Projects";
 import "./Resume.scss";
 
 //Components
 import Skills from "./Skills/Skills";
 import WorkExperience from "./WorkExperience/WorkExperience";
+import ProfessionalSummary from "./ProfessionalSummary/ProfessionalSummary";
+import Projects from "./Projects/Projects";
 
 function Resume() {
   return (

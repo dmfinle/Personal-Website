@@ -1,11 +1,16 @@
+//styles
+import "./NavigationBar.scss";
+
+//React
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import logo from "images/logo.svg";
 import { useContext } from "react";
+
+//Components
 import { ThemeContext } from "context/ThemeContext";
-import "./NavigationBar.scss";
 
 function NavigationBar() {
   const [theme] = useContext(ThemeContext);
@@ -40,7 +45,7 @@ function NavigationBar() {
                 Website Development
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/blogs">Blogs</Nav.Link>
+            {/* <Nav.Link href="/blogs">Blogs</Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
