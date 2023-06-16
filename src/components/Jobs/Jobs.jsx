@@ -193,6 +193,7 @@ function Jobs() {
                   <li>
                     {" "}
                     <a
+                      className={theme}
                       href="https://www.mpma47.org"
                       target="_blank"
                       rel="noreferrer"
