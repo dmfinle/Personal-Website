@@ -39,7 +39,7 @@ function App() {
   });
 
   return (
-    <div className={`${theme}`}>
+    <div className={`${theme} overflow-hidden`}>
       <NavigationBar></NavigationBar>
       <DarkModeSwitch
         className="dark-toggle "
