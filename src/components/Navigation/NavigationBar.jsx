@@ -1,12 +1,12 @@
 //styles
 import "./NavigationBar.scss";
+import logo from "images/DF.png";
 
 //React
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import logo from "images/logo.svg";
 import { useContext } from "react";
 
 //Components
