@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.b0a8c57d.css",
+    "main.css": "/static/css/main.905615d4.css",
     "main.js": "/static/js/main.ad1aca9f.js",
     "static/js/496.b10dff81.chunk.js": "/static/js/496.b10dff81.chunk.js",
     "static/media/tech.png": "/static/media/tech.62dd8810799544ed0e98.png",
@@ -16,12 +16,12 @@
     "static/media/NIWC.jpg": "/static/media/NIWC.8548abada7a173a62733.jpg",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "main.b0a8c57d.css.map": "/static/css/main.b0a8c57d.css.map",
+    "main.905615d4.css.map": "/static/css/main.905615d4.css.map",
     "main.ad1aca9f.js.map": "/static/js/main.ad1aca9f.js.map",
     "496.b10dff81.chunk.js.map": "/static/js/496.b10dff81.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b0a8c57d.css",
+    "static/css/main.905615d4.css",
     "static/js/main.ad1aca9f.js"
   ]
 }
